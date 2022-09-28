@@ -1,17 +1,15 @@
-import './App.css';
-import './css/style.css';
-import blue from './imgs/blue.jpg';
-
-function Nombre(props) {
-  return <h1><a href="#" class="title">{props.name}</a></h1>;
-}
-function App() {
-  return (
-    <div className="App">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>STEEM</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
 <div id="wrap">
   <div id="header">
     <div class="title">
-      <Nombre name="STEEM" />
+      <h1><a href="#" class="title">STEEM</a></h1>
       <div class="tagline">Videogame Wiki</div>
     </div>
   </div>
@@ -19,7 +17,7 @@ function App() {
     <div id="menu">
       <h2>Navegar</h2>
       <ul>
-        <li><a href="#">Inicio</a></li>
+        <li style="border-top: 1px dashed #d8d8d8;"><a href="#">Inicio</a></li>
         <li><a href="#">Contenido 1</a></li>
         <li><a href="#">Contenido 2</a></li>
         <li><a href="#">Contenido 3</a></li>
@@ -30,7 +28,7 @@ function App() {
     <div id="main">
       <div class="main_content">
         <h2>Los inicios        </h2>
-        <p><img src={blue}  className="blue" alt="blue" /> Durante bastante tiempo ha sido complicado señalar cual fue el</p>
+        <p><img src="imgs/blue.jpg" alt="" style="float: left; margin: 0 8px 0 0;" /> Durante bastante tiempo ha sido complicado señalar cual fue el</p>
 <p>primer videojuego, principalmente debido a las múltiples definiciones</p>
         <p>de este que se han ido estableciendo, pero se puede considerar</p>
         <p>como primer videojuego el Nought and crosses, también llamado</p>
@@ -41,28 +39,9 @@ function App() {
     </div>
   </div>
   <div id="footer">
-    <div class="bottom">copyright</div>
+    <div class="bottom"> copyright</div>
   </div>
 </div>
 <div id="ffscrollbarfix"></div>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>s  rc/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-    </div>
-  );
-}
-function Welcome(props) {
-  return <h1>Hello, {props.name}</h1>;
-}
-export default App;
+</body>
+</html>
